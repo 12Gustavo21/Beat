@@ -1,0 +1,63 @@
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}   
+
+@mixin flex($justify-content, $align-items, $flex-direction) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+}
+
+@mixin font($font-size, $font-weight, $font-family, $color) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: $font-family;
+    color: $color;
+}
+
+header {
+    @include size(100%, 100vh);
+    background-color: #129799;
+}
+
+.headerContainer {
+    @extend header;
+    @include flex(space-around, center, column);
+}
+
+.boxList {
+    @include size(100%, 10%);
+    @include flex(center, center, row);
+}
+
+.lista {
+    @include size(100%, 100%);
+    @include flex(center, center, row);
+    gap: 5rem;
+    list-style: none;
+
+    li {
+        @include font(1.875rem, 400, 'Roboto', #fff);
+    }
+
+    li:hover {
+        cursor: pointer;
+        font-weight: 500;
+    }
+}
+
+.logoBox {
+    @include size(100%, 80%);
+    @include flex(center, center, row);
+
+    h1 {
+        @include font(4rem, 700, 'Roboto', #fff);
+        user-select: none;
+    }
+
+    img {
+        @include size(40rem, 20rem)
+    }
+}
