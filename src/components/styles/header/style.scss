@@ -1,25 +1,8 @@
-@mixin size($width, $height) {
-    width: $width;
-    height: $height;
-}   
-
-@mixin flex($justify-content, $align-items, $flex-direction) {
-    display: flex;
-    justify-content: $justify-content;
-    align-items: $align-items;
-    flex-direction: $flex-direction;
-}
-
-@mixin font($font-size, $font-weight, $font-family, $color) {
-    font-size: $font-size;
-    font-weight: $font-weight;
-    font-family: $font-family;
-    color: $color;
-}
+@import '../variables';
 
 header {
     @include size(100%, 100vh);
-    background-color: #129799;
+    background-color: $colorBlue;
 }
 
 .headerContainer {
@@ -39,7 +22,7 @@ header {
     list-style: none;
 
     li {
-        @include font(1.875rem, 400, 'Roboto', #fff);
+        @include font(1.875rem, 400, $family-principal, $colorWhite);
     }
 
     li:hover {
@@ -53,7 +36,7 @@ header {
     @include flex(center, center, row);
 
     h1 {
-        @include font(4rem, 700, 'Roboto', #fff);
+        @include font(4rem, 700, $family-principal, $colorWhite);
         user-select: none;
     }
 

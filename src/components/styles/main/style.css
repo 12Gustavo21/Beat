@@ -1,1 +1,106 @@
-/*# sourceMappingURL=style.css.map */
+main, .mainContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FFA185;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.informacoes {
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 3rem 1rem;
+}
+.informacoes h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  word-wrap: break-word;
+  text-transform: uppercase;
+}
+.informacoes p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  word-wrap: break-word;
+}
+
+.imageBox {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  width: 100%;
+  min-height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.image img {
+  width: 40%;
+  min-height: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: 1s ease-in-out;
+}
+.image img:hover {
+  border-radius: 5rem;
+  -webkit-animation: animacao 2s linear infinite;
+          animation: animacao 2s linear infinite;
+}
+@-webkit-keyframes animacao {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes animacao {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.ultimoTitulo {
+  font-size: 1.875rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  word-wrap: break-word;
+  padding: 2rem 0 3rem 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}/*# sourceMappingURL=style.css.map */

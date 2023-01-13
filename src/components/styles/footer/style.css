@@ -1,1 +1,71 @@
-/*# sourceMappingURL=style.css.map */
+footer, .icons, .iconsBox {
+  background-color: #129799;
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footerContainer, .listBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100%;
+}
+
+.iconsBox {
+  width: 40%;
+  min-height: 100%;
+}
+
+.icons {
+  width: 20%;
+  min-height: 100%;
+}
+
+.iconsImg {
+  width: 40%;
+  min-height: 100%;
+  cursor: pointer;
+}
+
+.listBox {
+  width: 50%;
+  min-height: 100%;
+}
+
+.list {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.listItem {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  word-wrap: break-word;
+}
+.listItem:hover {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #FFA185;
+  word-wrap: break-word;
+}/*# sourceMappingURL=style.css.map */

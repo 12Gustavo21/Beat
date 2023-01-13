@@ -1,0 +1,70 @@
+@import '../variables';
+
+main {
+    @include size(100%, 100vh);
+    background-color: $colorOrange;
+}
+
+.mainContainer {
+    @extend main;
+    @include flex(center, center, column);
+}
+
+.informacoes {
+    @include size(100%, 20vh);
+    @include flex(center, flex-start, column);
+    gap: 1.5rem;
+    padding: 3rem 1rem;
+
+    h1{
+        @include font(2.5rem, 700, $family-principal, $colorWhite);
+        text-transform: uppercase;
+    }
+
+    p {
+        @include font(1.5rem, 400, $family-principal, $colorBlack);
+    }
+}
+
+.imageBox {
+    @include size(100%, 100vh);
+    @include flex(space-around, center, column);
+}
+
+.image {
+    @include size(100%, 50%);
+    @include flex(center, center, row);
+    gap: 1.5rem;
+    
+    img {
+        @include size(40%, 40%);
+        object-fit: cover;
+        object-position: center;
+        transition: 1s ease-in-out;
+    }
+
+    img:hover {
+        border-radius: 5rem;
+        animation: animacao 2s linear infinite;
+    }
+
+    @keyframes animacao {
+        0%{
+            filter: hue-rotate(0deg);
+        }
+
+        50% {
+            filter: hue-rotate(180deg);
+        }
+
+        100% {
+            filter: hue-rotate(360deg);
+        }
+    }
+}
+
+.ultimoTitulo {
+    @include font(1.875rem, 700, $family-principal, $colorBlack);
+    padding: 2rem 0 3rem 0;
+    user-select: none;
+}

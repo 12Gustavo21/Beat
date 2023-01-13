@@ -1,0 +1,25 @@
+$family-principal: 'Roboto', sans-serif;
+$colorBlack: #000;
+$colorWhite: #fff;
+$colorOrange: #FFA185;
+$colorBlue: #129799;
+
+@mixin size($width, $height) {
+    width: $width;
+    min-height: $height;
+}
+
+@mixin flex($justify-content, $align-items, $flex-direction) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+}
+
+@mixin font($font-size, $font-weight, $font-family, $color) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: $font-family;
+    color: $color;
+    word-wrap: break-word;
+}
