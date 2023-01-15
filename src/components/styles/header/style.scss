@@ -3,6 +3,7 @@
 header {
     @include size(100%, 100vh);
     background-color: $colorBlue;
+    overflow: hidden;
 }
 
 .headerContainer {
@@ -29,6 +30,10 @@ header {
         cursor: pointer;
         font-weight: 500;
     }
+
+    @media only screen and (max-width: 1035px) {
+        gap: 2rem;
+    }
 }
 
 .logoBox {
@@ -38,9 +43,18 @@ header {
     h1 {
         @include font(4rem, 700, $family-principal, $colorWhite);
         user-select: none;
+        text-align: center;
     }
 
     img {
         @include size(40rem, 20rem)
+    }
+
+    @media only screen and (max-width: 1035px) {
+        @include flex(center, center, column);
+
+        img {
+            @include size(30rem, 15rem);
+        }
     }
 }

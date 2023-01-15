@@ -22,19 +22,19 @@ main, .mainContainer {
   padding: 3rem 1rem;
 }
 .informacoes h1 {
+  word-wrap: break-word;
   font-size: 2.5rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  word-wrap: break-word;
   text-transform: uppercase;
 }
 .informacoes p {
+  word-wrap: break-word;
   font-size: 1.5rem;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   color: #000;
-  word-wrap: break-word;
 }
 
 .imageBox {
@@ -65,9 +65,9 @@ main, .mainContainer {
   transition: 1s ease-in-out;
 }
 .image img:hover {
-  border-radius: 5rem;
-  -webkit-animation: animacao 2s linear infinite;
-          animation: animacao 2s linear infinite;
+  border-radius: 3rem;
+  -webkit-animation: animacao 3s linear infinite;
+          animation: animacao 3s linear infinite;
 }
 @-webkit-keyframes animacao {
   0% {
@@ -93,11 +93,11 @@ main, .mainContainer {
 }
 
 .ultimoTitulo {
+  word-wrap: break-word;
   font-size: 1.875rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   color: #000;
-  word-wrap: break-word;
   padding: 2rem 0 3rem 0;
   -webkit-user-select: none;
      -moz-user-select: none;

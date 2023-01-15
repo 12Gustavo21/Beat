@@ -2,6 +2,7 @@ header, .headerContainer {
   width: 100%;
   min-height: 100vh;
   background-color: #129799;
+  overflow: hidden;
 }
 
 .headerContainer {
@@ -31,15 +32,20 @@ header, .headerContainer {
   list-style: none;
 }
 .lista li {
+  word-wrap: break-word;
   font-size: 1.875rem;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  word-wrap: break-word;
 }
 .lista li:hover {
   cursor: pointer;
   font-weight: 500;
+}
+@media only screen and (max-width: 1035px) {
+  .lista {
+    gap: 2rem;
+  }
 }
 
 .logoBox {
@@ -51,17 +57,30 @@ header, .headerContainer {
   flex-direction: row;
 }
 .logoBox h1 {
+  word-wrap: break-word;
   font-size: 4rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  word-wrap: break-word;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  text-align: center;
 }
 .logoBox img {
   width: 40rem;
   min-height: 20rem;
+}
+@media only screen and (max-width: 1035px) {
+  .logoBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logoBox img {
+    width: 30rem;
+    min-height: 15rem;
+  }
 }/*# sourceMappingURL=style.css.map */

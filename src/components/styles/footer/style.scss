@@ -18,11 +18,11 @@ footer {
 
 .icons {
     @extend footer;
-    @include size(20%, 100%);
+    @include size(15%, 100%);
 }
 
 .iconsImg {
-    @include size(40%, 100%);
+    @include size(65%, 100%);
     cursor: pointer;
 }
 
@@ -33,12 +33,11 @@ footer {
 
 .list {
     @include size(100%, 100%);
-    @include flex(center, center, row);
-    gap: 1.5rem;
+    @include flex(space-evenly, center, row);
 }
 
 .listItem {
-    @include size(100%, 100%);
+    @include size(15%, 100%);
     @include flex(center, center, column);
     @include font(1.5rem, 400, $family-principal, $colorWhite);
 
