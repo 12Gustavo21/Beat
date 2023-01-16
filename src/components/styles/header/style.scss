@@ -34,6 +34,13 @@ header {
     @media only screen and (max-width: 1035px) {
         gap: 2rem;
     }
+
+    @media only screen and (max-width: 660px) {
+        li {
+            font-size: 1.3rem;
+            text-align: center;
+        }
+    }
 }
 
 .logoBox {
@@ -52,6 +59,10 @@ header {
 
     @media only screen and (max-width: 1035px) {
         @include flex(center, center, column);
+
+        h1 {
+            font-size: 3rem;
+        }
 
         img {
             @include size(30rem, 15rem);

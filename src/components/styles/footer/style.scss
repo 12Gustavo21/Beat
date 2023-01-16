@@ -9,31 +9,56 @@ footer {
 .footerContainer {
     @include flex(space-between, center, row);
     @include size(100%, 100%);
+
+    @media only screen and (max-width: 650px) {
+        @include flex(space-evenly, center, column);
+        @include size(100%, 20vh);
+    }
 }
 
 .iconsBox {
     @extend footer;
     @include size(40%, 100%);
+
+    @media only screen and (max-width: 650px) {
+        @include size(90%, 100%);
+    }
 }
 
 .icons {
     @extend footer;
     @include size(15%, 100%);
+
+    @media only screen and (max-width: 650px) {
+        @include size(30%, 100%);
+    }
 }
 
 .iconsImg {
     @include size(65%, 100%);
     cursor: pointer;
+
+    @media only screen and (max-width: 650px) {
+        @include size(3rem, 100%);
+    }
 }
 
 .listBox {
     @extend .footerContainer;
     @include size(50%, 100%);
+
+    @media only screen and (max-width: 650px) {
+        @include size(90%, 100%);
+    }
 }   
 
 .list {
     @include size(100%, 100%);
     @include flex(space-evenly, center, row);
+
+    @media only screen and (max-width: 650px) {
+        @include flex(space-around, center, row)
+    }
 }
 
 .listItem {

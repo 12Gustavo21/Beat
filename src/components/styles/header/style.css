@@ -47,6 +47,12 @@ header, .headerContainer {
     gap: 2rem;
   }
 }
+@media only screen and (max-width: 660px) {
+  .lista li {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
 
 .logoBox {
   width: 100%;
@@ -78,6 +84,9 @@ header, .headerContainer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .logoBox h1 {
+    font-size: 3rem;
   }
   .logoBox img {
     width: 30rem;

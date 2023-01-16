@@ -45,6 +45,11 @@ main, .mainContainer {
   align-items: center;
   flex-direction: column;
 }
+@media only screen and (max-width: 1024px) {
+  .imageBox {
+    gap: 2rem;
+  }
+}
 
 .image {
   width: 100%;
@@ -89,6 +94,18 @@ main, .mainContainer {
   }
   100% {
     filter: hue-rotate(360deg);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .image img {
+    width: 80%;
+    min-height: 80%;
   }
 }
 

@@ -16,15 +16,37 @@ footer, .icons, .iconsBox {
   width: 100%;
   min-height: 100%;
 }
+@media only screen and (max-width: 650px) {
+  .footerContainer, .listBox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 20vh;
+  }
+}
 
 .iconsBox {
   width: 40%;
   min-height: 100%;
 }
+@media only screen and (max-width: 650px) {
+  .iconsBox {
+    width: 90%;
+    min-height: 100%;
+  }
+}
 
 .icons {
   width: 15%;
   min-height: 100%;
+}
+@media only screen and (max-width: 650px) {
+  .icons {
+    width: 30%;
+    min-height: 100%;
+  }
 }
 
 .iconsImg {
@@ -32,10 +54,22 @@ footer, .icons, .iconsBox {
   min-height: 100%;
   cursor: pointer;
 }
+@media only screen and (max-width: 650px) {
+  .iconsImg {
+    width: 3rem;
+    min-height: 100%;
+  }
+}
 
 .listBox {
   width: 50%;
   min-height: 100%;
+}
+@media only screen and (max-width: 650px) {
+  .listBox {
+    width: 90%;
+    min-height: 100%;
+  }
 }
 
 .list {
@@ -45,6 +79,14 @@ footer, .icons, .iconsBox {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
+}
+@media only screen and (max-width: 650px) {
+  .list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
 }
 
 .listItem {
